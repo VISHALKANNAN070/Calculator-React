@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bg-color: #181818;
+  --border-color: #555;
+  --btn-bg: #303136;
+  --btn-hover: #505050;
+  --text-dark: #ffffff;
+  --text-light: #aaaaaa;
+  --btn-equal: #ff9500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+}
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 5rem);
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.output {
+  background: black;
+  color: white;
+  text-align: right;
+  padding: 15px;
+  border-radius: 5px;
+  word-wrap: break-word;
+  word-break: break-all;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.prev {
+  font-size: 1.2rem;
+  color: var(--text-light);
+}
+
+.curr {
+  font-size: 2rem;
+}
+
+
+button {
+  font-size: 1.5rem;
+  padding: 10px;
+  background: var(--btn-bg);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--btn-hover);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.equal {
+  background: var(--btn-equal);
+  color: white;
+}
+
+.equal:hover {
+  background: #d87c00;
+}
+

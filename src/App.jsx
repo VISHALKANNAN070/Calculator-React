@@ -1,8 +1,8 @@
 import React from 'react'
-import Todo from './components/Todo'
+import Calculator from './components/Calculator'
 function App() {
   return (
-<Todo />
+    <Calculator />
   )
 }
 
